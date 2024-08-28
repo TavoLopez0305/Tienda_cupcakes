@@ -1,0 +1,148 @@
+:root {
+
+    --Headingfont: "Lobster", sans-serif;
+    --Parrafatfont: "Moderustic", sans-serif;
+
+    --primaricolor:#E6D4B7;
+    --secodarycolor:#AD4146;
+    --titlecolor:#D7A77F;
+    --boxcolor:#FCFBFC;
+
+    --whitecolor:#FFFFFF;
+    --bodercolor:#D8C9B5;
+    --footercolor:#1C151B;
+}
+html{
+    box-sizing: border-box;
+    font-size:62.5% ; /*1rem == 10xp*/
+
+
+}
+*, *:before, *::after{
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--primaricolor);
+    
+     font-family: var(--Parrafatfont);
+     font-size: 1.6rem;
+     line-height: 2;
+}
+
+/** Globals **/
+
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-family: var(--Headingfont);
+}
+
+h1{
+    font-size: 12rem;
+}
+h2{
+    font-size: 7rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+
+/** Utilities **/
+.no_margin{
+    margin: 0;
+}
+.no_padding{
+    padding: 0;
+}
+.center_text{
+    text-align: center;
+}
+
+.header{
+    background-color: var(--footercolor);
+    height: max-content;
+
+}
+.header__title{
+    text-align: center;
+    color: var(--whitecolor);
+}
+.barra{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.barra a{
+    padding: 2rem 2rem;
+    margin: 0;
+    display: block;
+}
+.barra a img{
+    width: auto;
+    height: auto;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.link__navegation{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin-block: auto;
+
+    color: var(--whitecolor);
+
+}
+.footer{
+    background-color: var(--footercolor);
+    color: var(--whitecolor);
+    text-align: center;
+    padding: 2rem;
+}
+.main{
+    background-image: url(../multimedia/not_found.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: max-content;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main h1{
+    display: block;
+}
+.main p{
+    display: block;
+}
+@media (min-width:760px){
+
+    .navegation{
+        display: flex;
+        gap: 2rem;
+        margin-block: auto;
+    }
+
+}
+@media (max-width:780px){
+    .main{
+        padding-block-end: 15rem;
+    }
+}
